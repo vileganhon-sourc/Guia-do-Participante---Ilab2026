@@ -8,7 +8,7 @@ const MAX_SELECTIONS = Number(process.env.MAX_SELECTIONS) || 8;
 const RATE_LIMIT_MS = Number(process.env.RATE_LIMIT_MS) || 60_000;
 
 // Deadline: 2026-02-27 18:00:00 Brasília (UTC-3) = 21:00:00 UTC
-const DEADLINE = new Date("2026-02-27T21:00:00.000Z");
+const DEADLINE = new Date("2026-03-01T21:00:00.000Z");
 const isVotingClosed = () => Date.now() >= DEADLINE.getTime();
 
 const VALID_GROUPS = new Set([1, 2]);
@@ -26,24 +26,35 @@ const COMPANY_SET = new Set(COMPANIES);
 type VoteStore = Record<string, number>;
 
 function voteFile(group: number): string {
-    return `/tmp/votes-group${group}.json`;
+    // 2.7 - Support persistent storage via env var
+    const baseDir = process.env.PERSISTENT_STORAGE_DIR || "/tmp";
+    return `${baseDir}/votes-group${group}.json`;
 }
 
 function loadVotes(group: number): VoteStore {
+    const file = voteFile(group);
     try {
-        const file = voteFile(group);
         if (fs.existsSync(file)) {
-            return JSON.parse(fs.readFileSync(file, "utf-8")) as VoteStore;
+            const data = fs.readFileSync(file, "utf-8");
+            return JSON.parse(data) as VoteStore;
         }
-    } catch { /* corrupted — reset */ }
+    } catch (e) {
+        console.error(`[POLL] Failed to load votes for group ${group} from ${file}:`, e);
+    }
+
+    // Initial state: all zeros
     const initial: VoteStore = {};
     for (const c of COMPANIES) initial[c] = 0;
     return initial;
 }
 
 function saveVotes(votes: VoteStore, group: number) {
-    try { fs.writeFileSync(voteFile(group), JSON.stringify(votes, null, 2)); }
-    catch { /* /tmp not writable — non-fatal */ }
+    const file = voteFile(group);
+    try {
+        fs.writeFileSync(file, JSON.stringify(votes, null, 2));
+    } catch (e) {
+        console.error(`[POLL] Failed to save votes for group ${group} to ${file}:`, e);
+    }
 }
 
 function buildCompanyList(store: VoteStore) {
