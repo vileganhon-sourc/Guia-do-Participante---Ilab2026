@@ -41,6 +41,10 @@ export function ProgramacaoWizard() {
                                 <p className="font-semibold">Reunião Técnica</p>
                                 <p className="text-sm text-muted-foreground">14h - 17h | Sala GTI</p>
                             </div>
+                            <div>
+                                <p className="font-semibold">Reunião Dra. Camila Pintarelli</p>
+                                 <p className="text-sm text-muted-foreground">17h30 - 18h30 | Palco 01 - Painel 13 - Tema: 25 anos do FNSP, Segurança e Investimento.</p>
+                            </div>
                         </CardContent>
                     </Card>
 
