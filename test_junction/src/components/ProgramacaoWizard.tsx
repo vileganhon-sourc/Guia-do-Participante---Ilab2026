@@ -16,12 +16,19 @@ export function ProgramacaoWizard() {
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
                                 <Clock className="w-5 h-5 text-accent" />
-                                03 de março - Abertura
+                                03 de março
                             </CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            <p className="font-semibold">Horário: 19h</p>
-                            <p className="text-sm text-muted-foreground">Local: CICB</p>
+                        <CardContent className="space-y-4">
+                            <div>
+                                <p className="font-semibold">Soft Opening</p>
+                                <p className="text-sm text-foreground">Visitação antecipada aos estandes, limitada aos Grandes Conselhos, Câmaras Técnicas, Rede Interfederativa e GTIs.</p>
+                                <p className="text-sm text-muted-foreground mt-1">14h - 18h | iLab-Segurança (CICB)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Abertura</p>
+                                <p className="text-sm text-muted-foreground">19h | iLab-Segurança (CICB)</p>
+                            </div>
                         </CardContent>
                     </Card>
 
@@ -40,6 +47,13 @@ export function ProgramacaoWizard() {
                             <div>
                                 <p className="font-semibold">Reunião Técnica</p>
                                 <p className="text-sm text-muted-foreground">14h - 17h | Sala GTI</p>
+                            </div>
+                            <div>
+                                <div className="space-y-1">
+                                    <p className="font-semibold">Palestra Dra. Camila Pintarelli</p>
+                                    <p className="text-sm text-muted-foreground">17h30 - 18h30 | Palco 01 - Painel 13</p>
+                                    <p className="text-xs text-primary/70 italic mt-0.5">Tema: 25 anos do FNSP, Segurança e Investimento.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>
@@ -85,12 +99,19 @@ export function ProgramacaoWizard() {
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
                                 <Clock className="w-5 h-5 text-accent" />
-                                03 de março - Abertura
+                                03 de março
                             </CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            <p className="font-semibold">Horário: 19h</p>
-                            <p className="text-sm text-muted-foreground">Local: CICB</p>
+                        <CardContent className="space-y-4">
+                            <div>
+                                <p className="font-semibold">Soft Opening</p>
+                                <p className="text-sm text-foreground">Visitação antecipada aos estandes, limitada aos Grandes Conselhos, Câmaras Técnicas, Rede Interfederativa e GTIs.</p>
+                                <p className="text-sm text-muted-foreground mt-1">14h - 18h | iLab-Segurança (CICB)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Abertura</p>
+                                <p className="text-sm text-muted-foreground">19h | iLab-Segurança (CICB)</p>
+                            </div>
                         </CardContent>
                     </Card>
 
@@ -154,11 +175,19 @@ export function ProgramacaoWizard() {
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
                                 <Clock className="w-5 h-5 text-accent" />
-                                03 de março - Abertura
+                                03 de março
                             </CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            <p className="font-semibold">Horário: 19h</p>
+                        <CardContent className="space-y-4">
+                            <div>
+                                <p className="font-semibold">Soft Opening</p>
+                                <p className="text-sm text-foreground">Visitação antecipada aos estandes, limitada aos Grandes Conselhos, Câmaras Técnicas, Rede Interfederativa e GTIs.</p>
+                                <p className="text-sm text-muted-foreground mt-1">14h - 18h | iLab-Segurança (CICB)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Abertura</p>
+                                <p className="text-sm text-muted-foreground">19h | iLab-Segurança (CICB)</p>
+                            </div>
                         </CardContent>
                     </Card>
 
@@ -177,6 +206,13 @@ export function ProgramacaoWizard() {
                             <div>
                                 <p className="font-semibold">Reunião Técnica</p>
                                 <p className="text-sm text-muted-foreground">14h - 17h</p>
+                            </div>
+                            <div>
+                                <div className="space-y-1">
+                                    <p className="font-semibold">Palestra Dra. Camila Pintarelli</p>
+                                    <p className="text-sm text-muted-foreground">17h30 - 18h30 | Palco 01 - Painel 13</p>
+                                    <p className="text-xs text-primary/70 italic mt-0.5">Tema: 25 anos do FNSP, Segurança e Investimento.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>
@@ -236,11 +272,19 @@ export function ProgramacaoWizard() {
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
                                 <Clock className="w-5 h-5 text-accent" />
-                                03 de março - Abertura
+                                03 de março
                             </CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            <p className="font-semibold">Horário: 19h</p>
+                        <CardContent className="space-y-4">
+                            <div>
+                                <p className="font-semibold">Soft Opening</p>
+                                <p className="text-sm text-foreground">Visitação antecipada aos estandes, limitada aos Grandes Conselhos, Câmaras Técnicas, Rede Interfederativa e GTIs.</p>
+                                <p className="text-sm text-muted-foreground mt-1">14h - 18h | iLab-Segurança (CICB)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Abertura</p>
+                                <p className="text-sm text-muted-foreground">19h | iLab-Segurança (CICB)</p>
+                            </div>
                         </CardContent>
                     </Card>
 
@@ -258,6 +302,13 @@ export function ProgramacaoWizard() {
                             </div>
                             <div>
                                 <div className="space-y-1"><p className="font-semibold">Visita ao iLab-Seg</p><p className="text-sm text-muted-foreground">14h - 17h</p></div>
+                            </div>
+                            <div>
+                                <div className="space-y-1">
+                                    <p className="font-semibold">Palestra Dra. Camila Pintarelli</p>
+                                    <p className="text-sm text-muted-foreground">17h30 - 18h30 | Palco 01 - Painel 13</p>
+                                    <p className="text-xs text-primary/70 italic mt-0.5">Tema: 25 anos do FNSP, Segurança e Investimento.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>
@@ -304,11 +355,19 @@ export function ProgramacaoWizard() {
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
                                 <Clock className="w-5 h-5 text-accent" />
-                                03 de março - Abertura
+                                03 de março
                             </CardTitle>
                         </CardHeader>
-                        <CardContent className="space-y-2">
-                            <p className="font-semibold">Horário: 19h</p>
+                        <CardContent className="space-y-4">
+                            <div>
+                                <p className="font-semibold">Soft Opening</p>
+                                <p className="text-sm text-foreground">Visitação antecipada aos estandes, limitada aos Grandes Conselhos, Câmaras Técnicas, Rede Interfederativa e GTIs.</p>
+                                <p className="text-sm text-muted-foreground mt-1">14h - 18h | iLab-Segurança (CICB)</p>
+                            </div>
+                            <div>
+                                <p className="font-semibold">Abertura</p>
+                                <p className="text-sm text-muted-foreground">19h | iLab-Segurança (CICB)</p>
+                            </div>
                         </CardContent>
                     </Card>
 
@@ -339,6 +398,13 @@ export function ProgramacaoWizard() {
                             </div>
                             <div>
                                 <div className="space-y-1"><p className="font-semibold">Visita ao iLab-Seg</p><p className="text-sm text-muted-foreground">14h - 17h</p></div>
+                            </div>
+                            <div>
+                                <div className="space-y-1">
+                                    <p className="font-semibold">Palestra Dra. Camila Pintarelli</p>
+                                    <p className="text-sm text-muted-foreground">17h30 - 18h30 | Palco 01 - Painel 13</p>
+                                    <p className="text-xs text-primary/70 italic mt-0.5">Tema: 25 anos do FNSP, Segurança e Investimento.</p>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>

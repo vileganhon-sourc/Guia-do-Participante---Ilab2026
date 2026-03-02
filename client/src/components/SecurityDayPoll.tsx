@@ -131,7 +131,13 @@ const CompanyCard = memo(function CompanyCard({ company, selected, blocked, onTo
                 )}
                 {company.disabled && <span className="poll-card-full-badge">Esgotado</span>}
             </div>
-            {selected && <CheckCircle2 className="poll-card-check" aria-hidden="true" />}
+
+            <div className="flex flex-col items-end gap-1 shrink-0 ml-2">
+                <div className={`text-xs font-semibold px-2 py-0.5 rounded-full ${selected ? 'bg-white/20 text-white' : 'bg-accent/10 text-accent-foreground'}`}>
+                    {company.votes} {company.votes === 1 ? 'voto' : 'votos'}
+                </div>
+                {selected && <CheckCircle2 className="w-4 h-4 text-amber-400" aria-hidden="true" />}
+            </div>
         </button>
     );
 });
