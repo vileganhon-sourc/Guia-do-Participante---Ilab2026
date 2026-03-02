@@ -271,6 +271,7 @@ export default function Home() {
         </section>
 
         {/* Security Day Poll Section */}
+        {/*
         <section id="security-day" className="container pt-24">
           <div className="flex items-center gap-4 mb-12">
             <div className="w-2 h-10 bg-accent rounded-full"></div>
@@ -285,6 +286,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </section>
+        */}
 
         {/* Roteiro Cultural Section */}
         <section id="roteiro" className="container pt-24">

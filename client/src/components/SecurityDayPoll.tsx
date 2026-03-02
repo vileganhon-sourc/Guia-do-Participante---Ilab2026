@@ -9,7 +9,7 @@ const MAX_SELECTIONS = 8;
 const API_BASE = "/api/poll";
 
 // Deadline: 2026-02-27 18:00:00 Brasília (UTC-3)
-const DEADLINE = new Date("2026-03-01T21:00:00.000Z");
+const DEADLINE = new Date("2026-02-27T21:00:00.000Z");
 
 const GROUPS = {
     1: { label: "Grupo 1", gtis: ["CONSESP", "CNCG"], color: "#e1ad31" },
